@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        rootContainer = findViewById(R.id.rootContainer)
-        transitionMgr = TransitionInflater.from(this).inflateTransition(R.transition.transition_two)
+        rootContainer = findViewById(R.id.root_container)
+        transitionMgr = TransitionInflater.from(this).inflateTransition(R.transition.transition)
         scene1 = Scene.getSceneForLayout(rootContainer, R.layout.scene_one, this)
         scene2 = Scene.getSceneForLayout(rootContainer, R.layout.scene_two, this)
 
